@@ -15,7 +15,6 @@ import spring.intro.service.UserService;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-
     private final UserMapper userMapper;
     private final UserService userService;
 
