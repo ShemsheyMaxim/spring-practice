@@ -22,6 +22,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User get(Long id) {
+        return userDao.get(id).orElseThrow(() ->
+                new RuntimeException("User for id " + id + " not found."));
+    }
+
+    @Override
     public List<User> listUsers() {
         return userDao.listUsers();
     }

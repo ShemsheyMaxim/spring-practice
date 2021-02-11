@@ -20,6 +20,10 @@ public class User {
     private String lastName;
     private String email;
 
+    public Long getId() {
+        return id;
+    }
+
     public String getFirstName() {
         return firstName;
     }
